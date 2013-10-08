@@ -2,6 +2,9 @@ class PagesController < ApplicationController
   def home
   end
 
-  def signup
+  def attorneys
+  end
+
+  def statute
   end
 end

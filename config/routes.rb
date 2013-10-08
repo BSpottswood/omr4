@@ -1,6 +1,7 @@
 Omr4::Application.routes.draw do
   root "pages#home"
-  get "signup" => "pages#signup" #creates signup_path
+  get "attorneys" => "pages#attorneys" #creates attorneys_path
+  get "statute" => "pages#statute" #creates statute_path
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
