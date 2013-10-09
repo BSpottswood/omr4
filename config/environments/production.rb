@@ -77,4 +77,8 @@ Omr4::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  # Required for Heroku
+  # Note host should be set to the actual host of your application.
+  config.action_mailer.default_url_options = { :host => 'cil.herokuapp.com' }
 end
