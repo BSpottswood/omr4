@@ -1,8 +1,11 @@
 Omr4::Application.routes.draw do
+  resources :pins
+
   devise_for :users
   root "pages#home"
   get "attorneys" => "pages#attorneys" #creates attorneys_path
   get "statute" => "pages#statute" #creates statute_path
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
